@@ -1,0 +1,63 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet link -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name">Enter Your First Name:</label>
+                <input type="text" id="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Enter Your Last Name:</label>
+                <input type="text" id="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Enter Your Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Create a New Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label>Account type (required):</label>
+                <input type="radio" name="accountType" value="Personal" checked> Personal
+                <input type="radio" name="accountType" value="Business"> Business
+            </div>
+            <div class="form-group">
+                <label for="profile-picture">Upload a profile picture:</label>
+                <input type="file" id="profile-picture">
+            </div>
+            <div class="form-group">
+                <label for="age">Input your age (years):</label>
+                <input type="number" id="age">
+            </div>
+            <div class="form-group">
+                <label for="referral">How did you hear about us?</label>
+                <select id="referral">
+                    <option>(select one)</option>
+                    <option>Social Media</option>
+                    <option>Friend</option>
+                    <option>Advertisement</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bio">Provide a bio:</label>
+                <textarea id="bio" placeholder="I like coding on the beach..."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox"> I accept the <a href="#">terms and conditions</a>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
